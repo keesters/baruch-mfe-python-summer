@@ -5,12 +5,19 @@ import requests
 import pandas as pd
 from threading import Thread
 from queue import Queue
-RAPIDAPI_KEY = '35658967cbmsh78da30f62c42138p19349fjsnf03dfd67e446'
+
+def set_api_key(api_key):
+    global RAPID_API_KEY
+    RAPIDAPI_KEY = api_key
+    
+def get_api_key():
+    return RAPIDAPI_KEY
 
 def trigger_api(query: dict,orgs: bool):
+    api_key = get_api_key()
     headers = {
         'x-rapidapi-host': "crunchbase-crunchbase-v1.p.rapidapi.com",
-        'x-rapidapi-key': RAPIDAPI_KEY
+        'x-rapidapi-key': api_key
     }
     if orgs:
         tp = 'organizations'
