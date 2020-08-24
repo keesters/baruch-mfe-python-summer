@@ -7,8 +7,8 @@ These functions allow you to pull people and organization data directly from Cru
 ```python
 import cbapi
 
-cbapi.people(name='Steve',types='investor') # returns people data based on the given inputs
-cbapi.companies(name='Data',locations='California') # returns company data based on the given inputs
+people_data = cbapi.people(name='Steve',types='investor') # returns people data based on the given inputs
+companies_data = cbapi.companies(name='Data',locations='California') # returns company data based on the given inputs
 ```
 ## Installation
 Use the package manager [pip](https://github.com/keesters/baruch-mfe-python-summer/master/cbapi/) to install foobar.
