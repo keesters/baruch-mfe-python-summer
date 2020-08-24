@@ -11,9 +11,9 @@ people_data = cbapi.people(name='Steve',types='investor') # returns people data 
 companies_data = cbapi.companies(name='Data',locations='California') # returns company data based on the given inputs
 ```
 ## Installation
-Use the package manager [pip](https://github.com/keesters/baruch-mfe-python-summer/master/cbapi/) to install foobar.
+Use the package manager [pip](https://github.com/keesters/baruch-mfe-python-summer/master/cbapi.git) to install foobar.
 
 ```bash
-pip install cbapi
+pip install git+https://github.com/keesters/baruch-mfe-python-summer/master/cbapi.git
 ```
 
